@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th colspan="3" style="text-align: center;">
+              COMERCIAL ELECTRONICS S.A.C <br />
+              Av. Separadora Industrial 1985 Ate vitarte - Lima
+            </th>
+            <th style="text-align: center;">
+              RUC: 20517098543 <br />
+              Boleta <br />
+              N 041-00100
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">Señor: Angelo Cancho DNI: 76536773</td>
+            <td rowspan="2" style="text-align: center;">Fecha: 10/05/2018</td>
+          </tr>
+          <tr>
+            <td colspan="3">Dirección: Mz E Lt: 7 Int. 1 Asociación Canadá, Lima, Lima.</td>
+          </tr>
+          <tr>
+            <td>Cantidad</td>
+            <td>Descripción</td>
+            <td>P. Unit</td>
+            <td>Importe</td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="number" id="Cantidad" placeholder="Cantidad" required="">
+              </td>
+              <td>
+                  <input type="text" id="Descripcion" placeholder="Descripción" required>
+              </td>
+              <td>
+                  <input type="number" step="0.01" id="precioUnitario" placeholder="Precio Unitario" required>
+              </td>
+              <td>
+                  <input type="number" step="0.01" id="Importe" placeholder="Importe" required>
+                  <button onclick="createProduct()">Crear</button>
+                  <button onclick="window.location.href='index2.html'" >Ver</button>
+                  <button onclick="clearUpdateForm2()">Limpiar Formulario</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

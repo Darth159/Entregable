@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Obtener Todos los Productos</h2>
+    <script src="script.js" defer></script>
+    <button onclick="getAllProducts()">Obtener Productos</button>
+    <div id="result"></div>
+    <h2>Actualizar Productos</h2>
+<button onclick="toggleUpdateForm()">Actualizar Producto</button>
+
+<div id="updateForm" style="display: none;">
+    <br>
+    <input type="number" id="updateId" placeholder="ID del producto a actualizar" required>
+    <input type="number" id="updateCantidad" placeholder="Nueva Cantidad" required>
+    <input type="text" id="updateDescripcion" placeholder="Nueva Descripción" required>
+    <input type="number" step="0.01" id="updatePrecioUnitario" placeholder="Nuevo Precio Unitario" required>
+    <input type="number" step="0.01" id="updateImporte" placeholder="Nuevo Importe" required>
+    <button onclick="updateProduct()">Actualizar</button>
+    <button onclick="clearUpdateForm()">Limpiar Formulario</button>
+</div>
+<h2>Eliminar Producto</h2>
+    <button id="showDeleteButton" onclick="showDeleteForm()">Eliminar Productos</button><br><br>
+    <div id="deleteForm" style="display: none;">
+        <input type="number" id="deleteId" placeholder="ID del producto a eliminar" required>
+        <button onclick="deleteProduct()">Eliminar</button>
+        <button onclick="clearDeleteForm()">Limpiar Formulario</button> 
+    </div><br>
+    <button onclick="window.location.href='index.html'">Volver</button>
+
+</body>
+</html>
